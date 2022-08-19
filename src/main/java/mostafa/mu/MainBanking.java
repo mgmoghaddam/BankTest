@@ -24,7 +24,7 @@ public class MainBanking {
       ch = sc.nextInt();
       switch (ch) {
         case 1:
-          C.showAccount(null);
+          C.showAllAccounts();
           break;
         case 2:
           System.out.print("Enter account no. you want to search: ");
