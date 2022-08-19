@@ -73,18 +73,7 @@ public class Bank {
   }
 
   public void showAllAccounts() {
-    accounts.forEach((k, account) -> System.out.println(
-        "Name of account owner: " + account.getUser().getFirstName() + " " + account.getUser()
-            .getLastName()
-            + "\n" +
-            "Phone number: " + account.getUser().getPhoneNumber()
-            + "\n" +
-            "Account Number: " + account.getAccno()
-            + "\n" +
-            "Currency type: " + account.getCurrency()
-            + "\n" +
-            "Total Balance :" + account.getBalance()
-    ));
+    accounts.forEach((k, account) -> showAccount(account));
   }
 
   //deposit money
